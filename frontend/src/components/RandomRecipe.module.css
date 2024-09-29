@@ -1,0 +1,43 @@
+.random-card {
+  max-width: 270px;
+  margin: 0 auto;
+  padding-top: 15px;
+  color: rgb(80, 79, 79);
+  & h3 {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.recipe-item {
+  margin: 20px auto;
+  background-color: #faf1e6;
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.recipe-item:hover {
+  background-color: rgba(247, 222, 191, 0.937);
+}
+
+.recipe-item img {
+  max-width: 90%;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.recipe-item p {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(80, 79, 79);
+  padding:0px;
+  margin:0px;
+}

@@ -1,0 +1,99 @@
+.recipe {
+  width: 80%;
+  max-width: 700px;
+  background-color: #fdfaf6;
+  border-radius: 15px;
+  margin: auto;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card h2 {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+}
+.card li {
+  margin-bottom: 15px;
+}
+
+.card-section ul {
+  list-style-type: circle;
+}
+
+.card-section li {
+  margin-bottom: 0;
+  padding-left: 7px;
+  list-style-position: inside;
+}
+
+.card-section img {
+  flex-grow: 1;
+  max-width: 45%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.card h3 {
+  text-align: left;
+  & a {
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .recipe {
+    padding: 10px 15px;
+    width: 95%;
+  }
+  .card {
+    gap: 15px;
+  }
+  /* .card-section {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .card-section img {
+    max-width: 70%;
+    height: 300px;
+    align-self: center;
+  } */
+}
+
+@media only screen and (max-width: 600px) {
+  .card-section {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .card-section img {
+    max-width: 70%;
+    max-height: 200px;
+    align-self: center;
+  }
+}

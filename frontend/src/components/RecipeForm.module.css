@@ -1,0 +1,59 @@
+.form {
+  width: 80%;
+  max-width: 700px;
+  background-color: #FAF1E6;  
+  border-radius: 15px;  
+  margin: auto;
+  padding: 20px 40px;  
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 6px;
+  background-color:#FDFAF6; 
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.form input:focus, .form textarea:focus {
+  border-color: #064420;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  gap:15px;
+}
+
+.invalid-message {
+font-size: 12px;
+color:red;
+margin:0;
+}
+
+.save-button:disabled,
+.save-button:hover {
+cursor:auto;
+opacity: 0.2 !important;
+}
+
+.required {
+  font-size: 12px;
+}
+
+.invalid {
+  margin-bottom: 4px !important;
+}
+
+
